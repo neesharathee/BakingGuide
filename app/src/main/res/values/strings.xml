@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">Baker\'s App</string>
+
+    <string name="recipe_photo_description">Picture of Recipe, if available.</string>
+    <string name="placeholder_image">No video, placeholder image instead.</string>
+    <string name="step_thumbnail_description">Thumbnail image for step, if available.</string>
+
+    <string name="next_button_label">next</string>
+    <string name="prev_button_label">prev</string>
+    <string name="retry_button_label">retry</string>
+    <string name="about_menu_label">About</string>
+
+    <string name="initial_widget_text">Ingredients will appear here after choosing a recipe in Baker\'s App</string>
+
+    <string name="serves_header">Serves</string>
+    <string name="ingredients_header">Ingredients</string>
+    <string name="step_header">Step</string>
+
+    <string name="end_of_steps_message">No more steps</string>
+    <string name="begin_of_steps_message">No previous steps</string>
+
+    <string name="credits_file_error_message">Error reading file!</string>
+    <string name="network_call_error_textview_message">Cannot load list of recipes.\nCheck internet connection.</string>
+    <string name="network_call_error_toast_message">Something went wrong… Please try later!</string>
+    <string name="bundle_missing_error">No recipe bundle found</string>
+    <string name="ingredients_title">Ingredients:</string>
+
+</resources>

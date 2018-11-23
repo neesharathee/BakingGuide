@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_step_list_item"
+    android:layout_width="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/editbox_background"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_step_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_step_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="12sp"
+            tools:text="Step: 42"/>
+
+        <TextView
+            android:id="@+id/tv_step_short_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="16sp"
+            tools:text="Stir something vigorously forever."/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_step_thumbnail"
+        android:layout_width="@dimen/thumb_width"
+        android:layout_height="@dimen/thumb_height"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/step_thumbnail_description"
+        android:scaleType="fitEnd"
+        android:src="@drawable/vg_silicone_spatula"
+        android:tint="#01d277"/>
+
+</LinearLayout>

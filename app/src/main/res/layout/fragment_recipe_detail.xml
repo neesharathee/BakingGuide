@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_recipe_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_recipe_detail_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_recipe_detail_image"
+            android:layout_width="@dimen/photo_width"
+            android:layout_height="@dimen/photo_height"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/recipe_photo_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vg_small_oven"
+            android:tint="#01d277"
+            app:layout_constraintEnd_toStartOf="@id/tv_recipe_name"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_recipe_name"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintStart_toEndOf="@id/iv_recipe_detail_image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Rum Cake"/>
+
+        <TextView
+            android:id="@+id/tv_detail_num_servings"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/tv_recipe_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_recipe_name"
+            tools:text="Serves: Many"/>
+
+        <TextView
+            android:id="@+id/tv_ingredients_title"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ingredients_title"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/tv_recipe_name"
+            app:layout_constraintTop_toBottomOf="@id/iv_recipe_detail_image"
+            tools:text="Ingredients:"/>
+
+        <HorizontalScrollView
+            android:id="@+id/sv_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_ingredients_title">
+
+            <FrameLayout
+                android:id="@+id/ingredient_frame_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <include layout="@layout/rv_ingredients_list"/>
+
+            </FrameLayout>
+
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:id="@+id/step_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sv_ingredients">
+
+            <include layout="@layout/rv_steps_list"/>
+
+        </FrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

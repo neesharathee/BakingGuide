@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03DA35"
+    android:padding="@dimen/widget_margin"
+    android:textAlignment="viewStart">
+
+    <TextView
+        android:id="@+id/tv_appwidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:contentDescription="@string/initial_widget_text"
+        android:text="@string/initial_widget_text"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"/>
+
+</RelativeLayout>

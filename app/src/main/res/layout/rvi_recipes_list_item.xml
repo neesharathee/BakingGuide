@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_recipes_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@android:drawable/editbox_background"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_recipes_list_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="20sp"
+            tools:text="Fillerup Cake"/>
+
+        <TextView
+            android:id="@+id/tv_num_servings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="14sp"
+            tools:text=" Serves 8"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_recipe_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|end"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/recipe_photo_description"
+        android:scaleType="fitEnd"
+        android:src="@drawable/vg_kitchen"
+        android:tint="#01d277"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_width">100dp</dimen>
+    <dimen name="photo_height">100dp</dimen>
+    <dimen name="thumb_width">50dp</dimen>
+    <dimen name="thumb_height">50dp</dimen>
+    <dimen name="progbar_width">70dp</dimen>
+    <dimen name="progbar_height">70dp</dimen>
+    <dimen name="recipe_card_width">275dp</dimen>
+
+    <dimen name="widget_margin">0dp</dimen>
+</resources>
